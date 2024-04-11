@@ -9,5 +9,11 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'website';
+  logoTitle = 'Laser Penguin';
+  
+  //List title
+  option1 = 'Inicio';
+  option2 = 'Lo mas vendido';
+  option3 = 'Categorias';
+  option4 = 'Acerca de';
 }
