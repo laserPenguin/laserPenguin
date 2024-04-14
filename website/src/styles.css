@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+.bg-custom-primary{
+  background-color: #426CB4;
+}
+.bg-custom-secondary{
+  background-color: #91BDD9;
+}
+.bg-custom-accent{
+  background-color: #9779D0;
+}
+.bg-custom-body{
+  background: linear-gradient(180deg, #9779d0, #ffffff);
+}
+.custom-text-color{
+  color: #0e0e0e;
+}
+.custom-text-color2{
+  color: #FFFFFF;
+}
+.bg-custom{
+  background-color: #FFFFFF;
+}
+.hc-pointer:hover{
+  cursor: pointer;
+}

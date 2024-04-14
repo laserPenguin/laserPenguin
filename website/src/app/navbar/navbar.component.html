@@ -1,20 +1,34 @@
-<div class="container-fluid">
-    <div class="row">
-        <!-- Logo and Page Name-->
-        <div class="col-4 p-2" style="height: 60px;">
-            <img src="https://picsum.photos/75" alt="log" href="index.html"/>
-            <a class="text-dark text-decoration-none d-none d-md-inline fs-4 text-center align-middle" href="index.html">&nbsp;{{logoTitle}}</a>
-        </div>
-        <!--Navbar-->
-        <div class="col bg-secondary" style="height: 60px;">
-            <nav class="h-auto d-inline-block">
-                <ul class="list-unstyled list-group list-group-horizontal fs-4">
-                    <li><a class="text-center align-middle">{{option1}}</a></li>
-                    <li>{{option2}}</li>
-                    <li>{{option3}}</li>
-                    <li>{{option4}}</li>
-                </ul>
-            </nav>
-        </div>
+<section class= "container-fluid">
+  <!--Logo-->
+  <div class="row">
+    <div class="col-4 bg-custom-primary align-content-center p-3" style="height: 150px">
+      <img src="assets/img/PenguinLogo-wth.png" alt="pageLogo" class="hc-pointer">
+      <span class="custom-text-color fs-3 m-3 align-bottom hc-pointer d-inline d-none d-lg-inline">Laser Penguin</span>
     </div>
-</div>
+    <!--NavBar-->
+    <div class="col-8 bg-custom-primary align-content-center" style="height: 150px">
+      <ul class="list-unstyled list-group list-group-horizontal-md fs-5 justify-content-md-evenly px-5 m-1">
+        <li>
+          <div class="text-center">
+            <span>{{ option1 }}</span>
+          </div>
+        </li>
+        <li>
+          <div class="bg-custom-secondary text-center">
+            <span class="custom-text-color2 p-3">{{option2}}</span>
+          </div>
+        </li>
+        <li>
+          <div class="text-center">
+            <span class="justify-content-evenly">{{ option3 }}</span>
+          </div>
+        </li>
+        <li>
+          <div class="text-center">
+            <span>{{ option4 }}</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
