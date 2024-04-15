@@ -9,7 +9,7 @@
   background-color: #9779D0;
 }
 .bg-custom-body{
-  background: linear-gradient(180deg, #9779d0, #ffffff);
+  background: linear-gradient(180deg, #9779d0 5%, #ffffff 50%);
 }
 .custom-text-color{
   color: #0e0e0e;
@@ -17,9 +17,18 @@
 .custom-text-color2{
   color: #FFFFFF;
 }
+.custom-text-color3{
+  color: #a8a8a8;
+}
 .bg-custom{
   background-color: #FFFFFF;
 }
 .hc-pointer:hover{
   cursor: pointer;
+}
+.fs-custom{
+  font-size: 1.4rem;
+}
+.container-size{
+  height: 150px;
 }
