@@ -2,30 +2,29 @@
   <!--Logo-->
   <div class="row">
     <div class="col-4 bg-custom-primary align-content-center p-3 container-size">
-      <img src="assets/img/PenguinLogo-wth.png" alt="pageLogo" class="hc-pointer img-fluid">
-      <span class="custom-text-color fs-custom m-3 align-bottom hc-pointer d-inline d-none d-lg-inline">Laser Penguin</span>
+      <img src="assets/img/PenguinLogo-wth.png" alt="pageLogo" class="img-fluid hc-pointer" routerLink="/">
+      <span class="custom-text-color fs-custom m-3 align-bottom d-inline d-none d-lg-inline hc-pointer" routerLink="/">Laser Penguin</span>
     </div>
     <!--NavBar-->
     <div class="col-8 bg-custom-primary align-content-center container-size">
       <ul class="list-unstyled list-group list-group-horizontal-md justify-content-md-evenly px-5 m-1 fs-custom">
-        <li>
-          <div class="text-center">
-            <span>{{ option1 }}</span>
+        <li><div class="text-center hc-pointer">
+            <span routerLink="/">{{option1}}</span>
           </div>
         </li>
         <li>
-          <div class="bg-custom-secondary text-center">
-            <span class="custom-text-color2 p-3">{{option2}}</span>
+          <div class="bg-custom-secondary text-center custom-text-color2 px-2 hc-pointer">
+            <span routerLink="/masvendido">{{option2}}</span>
           </div>
         </li>
         <li>
-          <div class="text-center">
-            <span class="justify-content-evenly">{{ option3 }}</span>
+          <div class="text-center hc-pointer">
+            <span routerLink="/categorias">{{option3}}</span>
           </div>
         </li>
         <li>
-          <div class="text-center">
-            <span>{{ option4 }}</span>
+          <div class="text-center hc-pointer">
+            <span routerLink="/acerca">{{option4}}</span>
           </div>
         </li>
       </ul>

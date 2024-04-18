@@ -1,27 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --primary: #426CB4;
+  --secondary: #91BDD9;
+  --accent: #9779D0;
+  --bg-color: #FFFFFF;
+  --text-color-blk: #0e0e0e;
+  --text-color-wht: #FFFFFF;
+  --text-color-3: #a8a8a8;
+}
+
 .bg-custom-primary{
-  background-color: #426CB4;
+  background-color: var(--primary);
 }
 .bg-custom-secondary{
-  background-color: #91BDD9;
+  background-color: var(--secondary);
 }
 .bg-custom-accent{
-  background-color: #9779D0;
+  background-color: var(--accent);
 }
 .bg-custom-body{
-  background: linear-gradient(180deg, #9779d0 5%, #ffffff 50%);
+  background: linear-gradient(180deg, var(--accent) 5%, var(--bg-color)  50%);
 }
 .custom-text-color{
-  color: #0e0e0e;
+  color: var(--text-color-blk);
 }
 .custom-text-color2{
-  color: #FFFFFF;
+  color: var(--text-color-wht);
 }
 .custom-text-color3{
-  color: #a8a8a8;
+  color: var(--text-color-3);
 }
 .bg-custom{
-  background-color: #FFFFFF;
+  background-color: var(--bg-color);
 }
 .hc-pointer:hover{
   cursor: pointer;
@@ -34,4 +44,7 @@
 }
 .main-container{
   height: 75vh;
+}
+.active{
+  border-bottom: 2px solid ;
 }
