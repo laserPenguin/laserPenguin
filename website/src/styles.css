@@ -19,7 +19,7 @@
   background-color: var(--accent);
 }
 .bg-custom-body{
-  background: linear-gradient(180deg, var(--accent) 5%, var(--bg-color)  50%);
+  background: linear-gradient(180deg, var(--accent) 15%, var(--bg-color)  100%);
 }
 .custom-text-color{
   color: var(--text-color-blk);
@@ -46,5 +46,7 @@
   height: 75vh;
 }
 .active{
-  border-bottom: 2px solid ;
+  border-bottom: 2px solid var(--bg-color);
+  transform: scale(1.1);
+  transition: border-bottom 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }

@@ -8,22 +8,23 @@
     <!--NavBar-->
     <div class="col-8 bg-custom-primary align-content-center container-size">
       <ul class="list-unstyled list-group list-group-horizontal-md justify-content-md-evenly px-5 m-1 fs-custom">
-        <li><div class="text-center hc-pointer">
-            <span routerLink="/">{{option1}}</span>
+        <li>
+          <div class="text-center hc-pointer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page">
+            <span routerLink="/Inicio">{{option1}}</span>
           </div>
         </li>
         <li>
-          <div class="bg-custom-secondary text-center custom-text-color2 px-2 hc-pointer">
+          <div class="bg-custom-secondary text-center custom-text-color2 px-2 hc-pointer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page">
             <span routerLink="/masvendido">{{option2}}</span>
           </div>
         </li>
         <li>
-          <div class="text-center hc-pointer">
+          <div class="text-center hc-pointer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page">
             <span routerLink="/categorias">{{option3}}</span>
           </div>
         </li>
         <li>
-          <div class="text-center hc-pointer">
+          <div class="text-center hc-pointer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page">
             <span routerLink="/acerca">{{option4}}</span>
           </div>
         </li>
