@@ -9,10 +9,15 @@ import { PageNotFoundComponent } from '../../views/page-not-found/page-not-found
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [RouterOutlet, InicioComponent, MasVendidoComponent, CategoriasComponent, AcercaComponent, PageNotFoundComponent],
+  imports: [
+    RouterOutlet,
+    InicioComponent,
+    MasVendidoComponent,
+    CategoriasComponent,
+    AcercaComponent,
+    PageNotFoundComponent,
+  ],
   templateUrl: './main-content.component.html',
-  styleUrl: './main-content.component.css'
+  styleUrl: './main-content.component.css',
 })
-export class MainContentComponent {
-
-}
+export class MainContentComponent {}
