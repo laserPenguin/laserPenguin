@@ -8,10 +8,9 @@ describe('MasVendidoComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MasVendidoComponent]
-    })
-    .compileComponents();
-    
+      imports: [MasVendidoComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(MasVendidoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

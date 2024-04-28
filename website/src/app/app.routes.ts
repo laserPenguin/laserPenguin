@@ -6,10 +6,14 @@ import { AcercaComponent } from './views/acerca/acerca.component';
 import { PageNotFoundComponent } from './views/page-not-found/page-not-found.component';
 
 export const routes: Routes = [
-    {path: 'Inicio', title: 'Inicio', component: InicioComponent},
-    {path: 'masvendido', title: 'Lo mas vendido', component: MasVendidoComponent},
-    {path: 'categorias', title: 'Categorias', component: CategoriasComponent},
-    {path: '', redirectTo: 'Inicio', pathMatch: 'full'},
-    {path: 'acerca', title: 'Acerca de', component: AcercaComponent},
-    {path: '**', component: PageNotFoundComponent}
-    ];
+  { path: 'Inicio', title: 'Inicio', component: InicioComponent },
+  {
+    path: 'masvendido',
+    title: 'Lo mas vendido',
+    component: MasVendidoComponent,
+  },
+  { path: 'categorias', title: 'Categorias', component: CategoriasComponent },
+  { path: '', redirectTo: 'Inicio', pathMatch: 'full' },
+  { path: 'acerca', title: 'Acerca de', component: AcercaComponent },
+  { path: '**', component: PageNotFoundComponent },
+];

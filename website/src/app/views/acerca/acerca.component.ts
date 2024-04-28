@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './acerca.component.html',
-  styleUrl: './acerca.component.css'
+  styleUrl: './acerca.component.css',
 })
-export class AcercaComponent {
-
-}
+export class AcercaComponent {}
