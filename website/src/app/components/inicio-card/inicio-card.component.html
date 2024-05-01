@@ -1,9 +1,9 @@
 <div class="row overflow-auto flex-nowrap">
-    <div class="col">
+    <div class="col" *ngFor="let card of cardItems">
         <div class="card p-3 m-2 card-size">
-          <img src="https://picsum.photos/200" class="card-img-top" alt="..." >
+          <img src="{{card.imageURL}}" class="card-img-top" alt="..." >
               <div class="card-body">
-                <p class="card-text">{{cardText}}</p>
+                <p class="card-text">{{card.context}}</p>
               </div>
         </div>
     </div>
