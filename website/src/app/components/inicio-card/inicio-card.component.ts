@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-inicio-card',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, RouterLink, RouterLinkActive],
   templateUrl: './inicio-card.component.html',
   styleUrl: './inicio-card.component.css',
 })

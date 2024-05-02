@@ -1,6 +1,9 @@
 <div class="row overflow-auto flex-nowrap">
     <div class="col" *ngFor="let card of cardItems">
-        <div class="card p-3 m-2 card-size">
+        <div class="card p-3 m-2 card-size hc-pointer" 
+        routerLink="/productDetails"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
           <img src="{{card.imageURL}}" class="card-img-top" alt="..." >
               <div class="card-body">
                 <p class="card-text">{{card.context}}</p>
