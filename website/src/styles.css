@@ -55,3 +55,9 @@
   width: 15rem;
   
 }
+.img-size{
+  width: 2rem;
+}
+.bg-modal{
+  background: linear-gradient(135deg, var(--bg-color) 0%, var(--accent) 50%);
+}

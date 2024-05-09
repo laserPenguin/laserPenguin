@@ -10,12 +10,15 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './inicio-card.component.css',
 })
 export class InicioCardComponent {
+  modalTitle = 'Descripcion';
+  modalOrderButton = 'Ordena Ahora';
   cardItems = [
     {
       imageURL: 'https://picsum.photos/200',
       context:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' +
         '\nVestibulum accumsan magna quis ipsum blandit commodo. Morbi tristique',
+      price: Math.floor(Math.random() * 100),
     },
     {
       imageURL: 'https://picsum.photos/100',
