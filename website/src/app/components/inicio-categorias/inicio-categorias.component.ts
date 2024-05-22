@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-inicio-categorias',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, RouterLink],
   templateUrl: './inicio-categorias.component.html',
   styleUrl: './inicio-categorias.component.css',
 })

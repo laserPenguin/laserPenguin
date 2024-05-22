@@ -1,5 +1,5 @@
 <div class="row overflow-auto flex-nowrap">
-    <div class="col" *ngFor="let name of categoryNames">
+    <div class="col" *ngFor="let name of categoryNames" routerLink='/DetalleCategorias'>
         <button type="button" class="card-size bg-custom fs-4 p-4 m-2 rounded-4 border-1">
             <span>{{name.name}}</span>
         </button>
@@ -9,7 +9,7 @@
 
     
     
-    <div class="col">
+    <div class="col" routerLink='/DetalleCategorias'>
         <button type="button" class="card-size bg-custom-primary custom-text-color2 fs-4 p-4 m-2 rounded-4 border-1">
             <span>{{customize}}</span>
         </button>
