@@ -33,6 +33,9 @@ jobs:
     - name: Navigate to website directory
       run: cd website
 
+    - name: List files in current directory
+      run: ls -al
+
     - name: Create package-lock.json if it doesn't exist
       run: |
         if [ ! -f package-lock.json ]; then
