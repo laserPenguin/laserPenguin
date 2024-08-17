@@ -1,0 +1,63 @@
+<section class="container-fluid text-wrap fs-4">
+  <!--Logo-->
+  <div class="row">
+    <div
+      class="col-4 bg-custom-primary align-content-center p-3 container-size"
+    >
+      <img
+        src="assets/img/PenguinLogo-wth.png"
+        alt="Laser Penguin Logo"
+        class="img-fluid hc-pointer"
+        routerLink="/"
+      />
+      <span
+        class="custom-text-color m-3 align-bottom d-inline d-none d-lg-inline hc-pointer"
+        routerLink="/"
+        >Laser Penguin</span
+      >
+    </div>
+    <!--NavBar-->
+    <div class="col-8 bg-custom-primary align-content-center container-size text-center">
+      <ul
+        class="list-unstyled list-group list-group-horizontal-md justify-content-md-evenly px-6 m-2 hc-pointer">
+        <li>
+          <div
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            ariaCurrentWhenActive="page"
+          >
+            <span routerLink="/Inicio">{{ option1 }}</span>
+          </div>
+        </li>
+        <li>
+          <div
+            class="bg-custom-secondary custom-text-color2 px-2"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            ariaCurrentWhenActive="page"
+          >
+            <span routerLink="/masvendido">{{ option2 }}</span>
+          </div>
+        </li>
+        <li>
+          <div
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            ariaCurrentWhenActive="page"
+          >
+            <span routerLink="/categorias">{{ option3 }}</span>
+          </div>
+        </li>
+        <li>
+          <div
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            ariaCurrentWhenActive="page"
+          >
+            <span routerLink="/acerca">{{ option4 }}</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

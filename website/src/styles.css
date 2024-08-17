@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary: #426cb4;
+  --secondary: #91bdd9;
+  --accent: #9779d0;
+  --bg-color: #ffffff;
+  --text-color-blk: #0e0e0e;
+  --text-color-wht: #ffffff;
+  --text-color-3: #a8a8a8;
+}
+
+
+.bg-custom-primary {
+  background-color: var(--primary);
+}
+.bg-custom-secondary {
+  background-color: var(--secondary);
+}
+.bg-custom-accent {
+  background-color: var(--accent);
+}
+.bg-custom-body {
+  background: linear-gradient(180deg, var(--accent) 15%, var(--bg-color) 100%);
+}
+.custom-text-color {
+  color: var(--text-color-blk);
+}
+.custom-text-color2 {
+  color: var(--text-color-wht);
+}
+.custom-text-color3 {
+  color: var(--text-color-3);
+}
+.text-primary{
+  color: var(--primary);
+}
+.bg-custom {
+  background-color: var(--bg-color);
+}
+.hc-pointer:hover {
+  cursor: pointer;
+}
+.container-size {
+  height: 150px;
+}
+.main-container {
+  height: 75vh;
+}
+.active {
+  border-bottom: 2px solid var(--bg-color);
+  transform: scale(1.1);
+  transition:
+    border-bottom 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+.card-size{
+  width: 15rem;
+  
+}
+.img-size{
+  width: 2rem;
+}
+.bg-modal{
+  background: linear-gradient(135deg, var(--bg-color) 0%, var(--accent) 50%);
+}
