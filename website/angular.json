@@ -85,7 +85,11 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "dir": "dist/LaserPenguin",
+            "baseHref": "https://laserpenguin.github.io/laserPenguin/"
+          }
         }
       }
     }
