@@ -6,7 +6,8 @@ import { InicioCategoriasComponent } from './inicio-categorias.component';
 describe('InicioCategoriasComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [InicioCategoriasComponent, RouterTestingModule],
+      imports: [RouterTestingModule],
+      declarations: [InicioCategoriasComponent],
       providers: [
         { provide: ActivatedRoute, useValue: { snapshot: { params: {} } } }
       ],
