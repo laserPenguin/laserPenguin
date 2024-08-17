@@ -1,14 +1,14 @@
 import { TestBed } from '@angular/core/testing';
 import { ActivatedRoute } from '@angular/router';
 import { AppComponent } from './app.component';
-import { provideRouter } from '@angular/router'; // Importa provideRouter
+import { RouterTestingModule } from '@angular/router/testing'; // Importa RouterTestingModule
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent],
+      declarations: [AppComponent], // Usa declarations en lugar de imports para componentes
+      imports: [RouterTestingModule], // Agrega RouterTestingModule si se usa en tu componente
       providers: [
-        provideRouter([]), // Proporciona rutas vacías o define las rutas necesarias
         { provide: ActivatedRoute, useValue: {} } // Proporciona una instancia falsa de ActivatedRoute
       ],
     }).compileComponents();
@@ -30,8 +30,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Hello, website',
-    );
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, website');
   });
 });
