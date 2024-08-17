@@ -30,20 +30,13 @@ jobs:
         cache: 'npm'
         cache-dependency-path: website/package-lock.json
 
-    - name: Navigate to website directory
-      run: cd website
-
-    - name: List files in current directory
-      run: ls -al
-
-    - name: Install dependencies (create package-lock.json if it doesn't exist)
-      run: npm install # Ejecuta npm install para crear package-lock.json si no existe
-
-    - name: Reinstall dependencies with clean install
-      run: npm ci # Si package-lock.json existe, npm ci se ejecutará limpiamente
-
-    - name: Build the project
-      run: npm run build --if-present
-
-    - name: Run tests
-      run: npm test
+    - name: Install dependencies and build project
+      run: |
+        cd website
+        ls -al
+        if [ ! -f package-lock.json ]; then
+          npm install
+        fi
+        npm ci
+        npm run build --if-present
+        npm test
