@@ -19,5 +19,5 @@ import { DetalleCategoriaComponent } from './views/detalle-categoria/detalle-cat
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title: "website" | undefined;
+  title: "website";
 }
