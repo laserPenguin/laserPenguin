@@ -6,8 +6,7 @@ import { RouterTestingModule } from '@angular/router/testing'; // Importa Router
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AppComponent], // Usa declarations en lugar de imports para componentes
-      imports: [RouterTestingModule], // Agrega RouterTestingModule si se usa en tu componente
+      imports: [AppComponent, RouterTestingModule], // Usa imports para componentes standalone y módulos
       providers: [
         { provide: ActivatedRoute, useValue: {} } // Proporciona una instancia falsa de ActivatedRoute
       ],
