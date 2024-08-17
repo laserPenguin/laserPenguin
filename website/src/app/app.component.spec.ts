@@ -1,10 +1,15 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { provideRouter } from '@angular/router'; // Importa provideRouter
+import { Routes } from '@angular/router'; // Importa Routes si necesitas definir rutas
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [AppComponent],
+      providers: [
+        provideRouter([]), // Proporciona rutas vacías o define las rutas necesarias
+      ],
     }).compileComponents();
   });
 
