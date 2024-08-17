@@ -1,16 +1,11 @@
 import { TestBed } from '@angular/core/testing';
-import { ActivatedRoute } from '@angular/router';
+import { RouterTestingModule } from '@angular/router/testing';
 import { InicioComponent } from './inicio.component';
-import {RouterTestingModule} from "@angular/router/testing";
 
 describe('InicioComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule],  // Asegúrate de incluir RouterTestingModule
-      declarations: [InicioComponent],
-      providers: [
-        { provide: ActivatedRoute, useValue: { snapshot: { params: {} } } }
-      ],
+      imports: [RouterTestingModule, InicioComponent],
     }).compileComponents();
   });
 
