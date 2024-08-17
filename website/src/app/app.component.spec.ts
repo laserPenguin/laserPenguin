@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
+import { ActivatedRoute } from '@angular/router';
 import { AppComponent } from './app.component';
 import { provideRouter } from '@angular/router'; // Importa provideRouter
-import { Routes } from '@angular/router'; // Importa Routes si necesitas definir rutas
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -9,6 +9,7 @@ describe('AppComponent', () => {
       imports: [AppComponent],
       providers: [
         provideRouter([]), // Proporciona rutas vacías o define las rutas necesarias
+        { provide: ActivatedRoute, useValue: {} } // Proporciona una instancia falsa de ActivatedRoute
       ],
     }).compileComponents();
   });
