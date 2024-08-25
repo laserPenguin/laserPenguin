@@ -7,38 +7,11 @@ import { PageNotFoundComponent } from './views/page-not-found/page-not-found.com
 import { DetalleCategoriaComponent } from './views/detalle-categoria/detalle-categoria.component';
 
 export const routes: Routes = [
-  {
-    path: 'Inicio',
-    title: 'Inicio',
-    component: InicioComponent,
-  },
-  {
-    path: 'masvendido',
-    title: 'Lo mas vendido',
-    component: MasVendidoComponent,
-  },
-  {
-    path: 'categorias',
-    title: 'Categorias',
-    component: CategoriasComponent,
-  },
-  {
-    path: 'acerca',
-    title: 'Acerca de',
-    component: AcercaComponent,
-  },
-  {
-    path: 'DetalleCategorias',
-    title: 'Detalle Categoria',
-    component: DetalleCategoriaComponent,
-  },
-  {
-    path: '',
-    redirectTo: 'Inicio',
-    pathMatch: 'full',
-  },
-  {
-    path: '**',
-    component: PageNotFoundComponent,
-  },
+  { path: 'inicio', title: 'Inicio', component: InicioComponent },
+  { path: 'masvendido', title: 'Lo mas vendido', component: MasVendidoComponent },
+  { path: 'categorias', title: 'Categorias', component: CategoriasComponent },
+  { path: 'acerca', title: 'Acerca de', component: AcercaComponent },
+  { path: 'detalle-categorias', title: 'Detalle Categoria', component: DetalleCategoriaComponent },
+  { path: '', redirectTo: 'inicio', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent },
 ];
