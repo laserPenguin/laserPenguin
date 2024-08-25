@@ -34,7 +34,7 @@
           },
           "configurations": {
             "production": {
-              "outputPath": "dist/LaserPenguin",
+              "outputPath": "dist",
               "index": "src/index.html",
               "baseHref": "/",
               "optimization": true,
